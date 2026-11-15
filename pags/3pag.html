@@ -13,12 +13,69 @@
     <ul class="links">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="2pag.html">Mascotas</a></li>
-      <li><a href="3pag.html">Como adoptar</a></li>
+      <li><a href="3pag.html" target="_blank">Como adoptar</a></li>
       <li><a href="4pag.html">Nosotros</a></li>
-      <li><a href="5pag.html">Contacto</a></li>
+      <li><a href="5pag.html">Donaciones</a></li>
     </ul>
   </nav>
 </header>
+ <main class="contenedor">
+    <a href="2pag.html" class="volver">← Volver a las mascotas</a>
+    <h1>Adoptar a <span id="nombre-mascota">una mascota</span></h1>
+    <p>Llena tus datos y nos pondremos en contacto contigo.</p>
+
+    <form id="form-adopcion">
+      <input type="hidden" id="mascota" name="mascota">
+
+      <label for="nombre_mascota">Nombre de la mascota</label>
+      <input type="text" id="nombre_mascota" name="nombre_mascota" required>
+
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="documento">Número de documento</label>
+      <input type="text" id="documento" name="documento" required>
+
+      <label for="telefono">Teléfono / WhatsApp</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="ciudad">Ciudad</label>
+      <input type="text" id="ciudad" name="ciudad" required>
+
+
+      <label for="vivienda">Tipo de vivienda</label>
+      <select id="vivienda" name="vivienda" required>
+        <option value="">Selecciona...</option>
+        <option>Casa</option>
+        <option>Apartamento</option>
+        <option>Finca</option>
+      </select>
+
+      <label for="otras">¿Tienes otras mascotas?</label>
+      <select id="otras" name="otras" required>
+        <option value="">Selecciona...</option>
+        <option>No</option>
+        <option>Sí</option>
+      </select>
+
+      <label for="motivo">¿Por qué quieres adoptar?</label>
+      <textarea id="motivo" name="motivo" rows="4" required></textarea>
+
+      <label class="check">
+        <input type="checkbox" id="acepto" required>
+        Me comprometo a cuidar y dar un hogar responsable a la mascota.
+      </label>
+
+      <button type="submit" class="btn-enviar">Enviar solicitud</button>
+    </form>
+
+    <p id="mensaje" class="mensaje" hidden></p>
+  </main>
+
+  <script src="../javascript/formulario.js"></script>
 <main>
 
 </main>

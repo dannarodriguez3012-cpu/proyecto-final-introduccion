@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
     <head>
+      <meta charset="UTF-8">  
         <link rel="stylesheet" href="../css/estilos.css">
         <title>Macotas</title>
         <link rel="icon" type="image/x-icon" href="../img/faviconnn.ico">
@@ -13,13 +14,26 @@
     <ul class="links">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="2pag.html">Mascotas</a></li>
-      <li><a href="3pag.html">Como adoptar</a></li>
+      <li><a href="3pag.html" target="_blank">Como adoptar</a></li>
       <li><a href="4pag.html">Nosotros</a></li>
-      <li><a href="5pag.html">Contacto</a></li>
+      <li><a href="5pag.html">Donaciones</a></li>
     </ul>
   </nav>
-
-</header>
-
+  </header>
+  <template id="plantilla-tarjeta">
+  <article class="tarjeta">
+    <div class="foto"><img src="" alt=""></div>
+    <div class="info">
+      <h3></h3>
+      <p class="datos"></p>
+      <p class="frase"></p>
+      <a class="btn" href="../pags/3pag.html" target="_blank">Quiero adoptar</a>
+    </div>
+  </article>
+</template>
+  </div>
+  <div class="grid" id="grid">
+  </div>
+  <script src="../javascript/mascotas.js" charset="utf-8"></script>
     </body>
 </html>
