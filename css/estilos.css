@@ -1,0 +1,154 @@
+body{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #7dcef9;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  border: 2px solid black;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #c4501b;
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.links a {
+  color: #2b2118;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+.menuboton { 
+  display: block; /**** aquí se modificó (none) ***/
+  background: none;
+  border: 0; font-size: 1.8rem; cursor: pointer; }
+
+.img1 {margin-top: 10px;
+    width: 350px;
+    height: 450px;  
+
+}
+.borde{ display: flex;
+align-items: center;
+gap:40px;
+padding: 5px;
+}
+  .texto {flex: 1;}
+  .borde img1{flex: 1;
+max-width: 50;
+border-radius: 50%;
+object-fit: cover;}
+.titulo2{font-family:monospace;
+    font-weight: 2500;
+    font-size: 50px;
+}
+.parrafo{ font-weight: 2500;
+font-size: 25px;}
+.botones {
+  display: flex;
+  gap: 12px;            
+  margin-top: 20px;
+}
+
+.boton {
+  padding: 12px 24px;
+  border-radius: 999px; 
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;     
+}
+
+
+.botonlleno {
+  background: #c4501b;
+  color: #fff;
+  border: 2px solid #c4501b;
+}
+.botonlleno:hover {
+  background: #a33f12;
+  border-color: #a33f12;
+}
+
+
+.botonborde {
+  background: transparent;
+  color: #7dcef9;
+  border: 2px solid #7dcef9;
+}
+.botonborde:hover {
+  background:#7dcef9;
+  color: #fff;
+}
+body{
+    background-size: cover;
+}
+.pasos {
+  background: #7dcef9;
+  color:black;
+  padding: 6px 3px;
+  border: 2px solid #2b2118;
+}
+.pasos h2{
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.pasos2{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
+}
+.pasos span{
+  font-size: 36px;
+  font-weight: 800;
+}
+.pasos h3{
+  margin: 8px 0 4px;
+}
+.pasos p{
+  font-size: 14px;
+  opacity: .85;
+}
+footer{
+  background: rgb(0, 0, 0);
+  color: rgb(219, 228, 248);
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+footer p{
+  font-size: 13px;
+  opacity: .8;
+  margin: 4px 0;
+}
+.contacto{
+  text-align: left;
+}
+@media (max-width: 700px) {
+  .nav { padding: 16px 20px; }
+  .menu-btn { display: block; }
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: #fff;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .links.abierto { display: flex; }
+
+}
