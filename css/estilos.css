@@ -139,7 +139,7 @@ font-size: 25px;}
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
 }
-.tarjetpasos:hover {
+.tarjetapasos:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
 }
@@ -159,11 +159,8 @@ footer p{
 .contacto{
   text-align: left;
 }
-  root {
-  --naranja: #c4561f;
-  --verde: #1f7068;
-  --crema: #fef6ee;
-  --durazno: #f3d9c0;
+  :root {
+  --naranja: #65ff8e;
 }
 .grid {
   display: grid;
@@ -256,14 +253,14 @@ footer p{
   filter: brightness(1.1);
  }
  .botn {
-  width: 50%;
+  width: 70%;
   margin:-5px;
   border: 2px solid black;
   background: rgb(142, 214, 154);
   color: #010101;
   padding: 20px;
   border-radius:9px;
-  font-weight: 10%;
+  font-weight: bolder;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
@@ -329,22 +326,21 @@ input, select, textarea {
   font-size: 20px;
   line-height: 2.0;
   color: #333;
-  margin-bottom: 20px;
 }
 .parrafodonaciones {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.5;
   color: #333;
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 4.3px;
+
 }
 .titulodonaciones {
   font-size: 60px;
   font-weight: bold;
   font-weight:bolder;
   color: #333;
-  margin-bottom: 20px;
-  padding: 20px;
+  
 }
 .donaciones {
   display: flex;
@@ -356,19 +352,90 @@ input, select, textarea {
   flex-direction: column;
   align-items: center;
 }
+
 .tarjeta { 
   font-size: 16px;
  }
 .contenedor {
    padding: 10px;
  }
-@media (min-width: 768px) {
-  .contenedor { 
-  padding: 20px;
- }
+  .links.abierto { display: flex; }
+  *, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; }
+body { overflow-x: hidden; }
+
+.menuboton, .menu-btn { display: none; }
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; }
+body { overflow-x: hidden; }
+
+.nav { flex-wrap: wrap; gap: 10px 20px; }
+.links { flex-wrap: wrap; margin: 0; padding: 0; gap: 10px 24px; }
+.links a { white-space: nowrap; }
+.menuboton, .menu-btn { display: none; }
+
+@media (min-width: 1201px) {
+  .nav { padding: 16px 80px; }
 }
-@media (min-width: 1024px) {
-  .contenedor { 
-    max-width: 1200px; margin: 0 auto;
+ 
+@media (max-width: 1024px) {
+  .nav { padding: 16px 30px; }
+  .pasos2 { grid-template-columns: repeat(2, 1fr); }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .titulo2 { font-size: 40px; }
+  .parrafo { font-size: 22px; }
+  .titulodonaciones { font-size: 46px; }
+  .parrafodonaciones { font-size: 22px; }
+  .botn { width: 70%; }
 }
+
+@media (max-width: 768px) {
+  .borde {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .img1 {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  .botones { justify-content: center; flex-wrap: wrap; }
+  .grid { grid-template-columns: 1fr; }
+  .donaciones { flex-direction: column; align-items: center; gap: 20px; }
+  .titulodonaciones { font-size: 38px; padding: 10px; }
+  .parrafodonaciones { font-size: 19px; padding: 10px; }
+  .donacionestexto { font-size: 18px; }
+  .botn { width: 100%; margin: 0; }
+  footer { flex-direction: column; align-items: flex-start; }
+  .pasos h2 { font-size: 28px; }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    padding: 12px 16px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .links {
+    justify-content: center;
+    gap: 8px 18px;
+  }
+  .links a { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .logo { font-size: 1.2rem; }
+  .titulo2 { font-size: 30px; }
+  .parrafo { font-size: 18px; }
+  .pasos2 { grid-template-columns: 1fr; }
+  .pasos span { font-size: 30px; }
+  .botones { flex-direction: column; }
+  .boton { width: 100%; text-align: center; }
+  .titulodonaciones { font-size: 30px; }
+  .parrafodonaciones { font-size: 17px; }
+  .contenedor { margin: 15px; padding: 15px; }
+  .tarjeta_nosotros { padding: 14px; line-height: 1.7; }
+  .foto { height: 170px; }
+  .btn-enviar { font-size: 15px; }
 }
